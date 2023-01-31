@@ -1,0 +1,14 @@
+{
+    "name": "Number Counter",
+    "description": "Instant sum of two digits in two digits",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "icon/CounterLogo.jpg",
+        "48": "icon/CounterLogo.jpg",
+        "128": "icon/CounterLogo.jpg"
+    }
+}
