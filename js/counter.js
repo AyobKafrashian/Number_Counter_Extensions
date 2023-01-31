@@ -1,6 +1,5 @@
+var display = document.getElementById("display");
 var num = 0
-var numbers = []
-var hid = document.getElementById("display");
 let anwser = 0;
 
 document.addEventListener('keydown', (event) => {
@@ -22,7 +21,7 @@ document.addEventListener('keydown', (event) => {
         else if (num.toString().length == 1) {
             num = num + name.toString();
             anwser = anwser + parseInt(num);
-            hid.placeholder = anwser.toString();
+            display.placeholder = anwser.toString();
             num = 0;
         }
         else {
@@ -35,6 +34,6 @@ document.addEventListener('keydown', (event) => {
 document.getElementById("Clear").addEventListener("click", clear_func);
 
 function clear_func() {
-    hid.placeholder = 0;
+    display.placeholder = 0;
     anwser = 0;
 }
